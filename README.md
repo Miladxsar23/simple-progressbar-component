@@ -32,7 +32,6 @@ let pb = new Progress(15, 0, 100, { parent : ".progress" });
 Method | Argument | Description 
 --- | --- | --- | 
 startTo | stepValue(number), time(ms) | By calling this method, progressing begins | 
---- | --- | --- | 
 end | ... | By calling this method, progressing end | 
   
 ## Live preview
