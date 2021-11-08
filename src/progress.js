@@ -37,7 +37,6 @@ class Progress {
     startTo(step, time) {
         if (this.intervalCode !== 0) return;
         this.intervalCode = setInterval(() => {
-            console.log("sss")
             if (this.now + step > this.max) {
                 this.now = this.max;
                 this.syncState();
