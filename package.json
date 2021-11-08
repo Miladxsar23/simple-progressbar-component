@@ -1,0 +1,27 @@
+{
+  "name": "simple-progress-bar",
+  "version": "1.0.0",
+  "description": "create a progress bar component with interfaces",
+  "main": "index.js",
+  "scripts": {
+    "start": "node-sass --source-map true ./src/style.scss ./src/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Miladxsar23/simple-progressbar-component.git"
+  },
+  "keywords": [
+    "progressbar",
+    "progress",
+    "loading"
+  ],
+  "author": "milad shiriyan",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Miladxsar23/simple-progressbar-component/issues"
+  },
+  "homepage": "https://github.com/Miladxsar23/simple-progressbar-component#readme",
+  "dependencies": {
+    "node-sass": "^6.0.1"
+  }
+}

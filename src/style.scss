@@ -1,0 +1,51 @@
+// reset all style
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: monospace;
+  }
+  
+  // variables
+  $progress-bar-bg-color: #1da1f2;
+  $progress-bar-box-shadow: 2px 14px 15px -7px rgba(30, 166, 250, 0.36);
+  $progress-bar-border-radius: 50px;
+  $progress-bar-height: 20px;
+  $progress-bar-transition-time: 0.5s;
+  
+  // mixins
+  @mixin flex($t, $j, $a) {
+    display: flex;
+    flex-flow: $t nowrap;
+    justify-content: $j;
+    align-items: $a;
+  }
+  
+  // progress bar styles
+  .progress-bar {
+    height: $progress-bar-height;
+    background: $progress-bar-bg-color;
+    box-shadow: $progress-bar-box-shadow;
+    border-radius: $progress-bar-border-radius;
+    transition: all $progress-bar-transition-time;
+  }
+  
+  //custom element style
+  .container {
+    width: 100%;
+    height: 100vh;
+    @include flex(column, center, center);
+    & h2 {
+      margin-bottom: 20px;
+    }
+    & .progress {
+      width: 40%;
+      height: 200px;
+      @include flex(column, center, start);
+      padding: 20px;
+      background: #e6e9ff;
+      border-radius: 20px;
+      box-shadow: 0px 10px 50px #abb7e9;
+    }
+  }
+  
